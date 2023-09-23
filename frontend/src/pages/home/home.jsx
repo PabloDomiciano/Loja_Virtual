@@ -1,11 +1,12 @@
-import React from 'react';
-import { Button } from 'primereact/button';
+import React from "react";;
 
 const Home = () => {
+
+
     return (
         <>
-            <div className="card flex justify-content-center">
-                <Button label="Entrar" icon="pi pi-check" />
+            <div>
+
             </div>
         </>
     )
