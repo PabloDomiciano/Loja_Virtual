@@ -6,8 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import lombok.Data;
+
 @Entity
-@Table(name = "usuarios")
+@Table(name = "usuario")
+@Data
 public class Usuario {
 
     @Id
@@ -18,6 +23,7 @@ public class Usuario {
 
     private String email;
 
+    @JsonIgnore
     private String senha;
     
 }
